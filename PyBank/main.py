@@ -70,7 +70,7 @@ with open(bankdata_csv, newline='') as csvfile:
 
     # Write results to a text file
 
-text_file = os.path.join('/Users/bwalsh/Documents/UCB-BER-DATA-PT-08-2019-U-C/homework/03-Python/Instructions/PyBank/Resources/budget_analysis.text')
+text_file = os.path.join('/Users/bwalsh/Desktop/LearnPython/python-challenge/PyBank/Budget_Analysis.text')
 
 with open(text_file, 'w',) as text_file:
     text_file.write(f"Financial Analysis \n")
