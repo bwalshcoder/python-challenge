@@ -65,8 +65,8 @@ with open(bankdata_csv, newline='') as csvfile:
     print(f"Total Months: {total_months}")
     print(f"Total Revenue: ${total_revenue}")
     print(f"Average Change: ${average_change:.2f}")
-    print(f"Greatest Profit Increase:, {biggest_profit_month}, (${highest})")
-    print(f"Greatet Profit Decrease:, {biggest_loss_month}, (${lowest})")
+    print(f"Greatest Profit Increase: {biggest_profit_month} (${highest})")
+    print(f"Greatet Profit Decrease: {biggest_loss_month} (${lowest})")
 
     # Write results to a text file
 
@@ -78,7 +78,7 @@ with open(text_file, 'w',) as text_file:
     text_file.write(f"Total Months: {total_months} \n")
     text_file.write(f"Total Revenue: ${total_revenue} \n")
     text_file.write(f"Average Change: ${average_change:.2f} \n")
-    text_file.write(f"Greatest Profit Increase:, {biggest_profit_month}, (${highest}) \n")
-    text_file.write(f"Greatet Profit Decrease:, {biggest_loss_month}, (${lowest}) \n")
+    text_file.write(f"Greatest Profit Increase: {biggest_profit_month} (${highest}) \n")
+    text_file.write(f"Greatet Profit Decrease: {biggest_loss_month} (${lowest}) \n")
 
 
