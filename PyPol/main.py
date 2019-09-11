@@ -56,6 +56,26 @@ print(f"--------------------")
 print(f"Winner: {winner}")
 print(f"--------------------")
 
+# Write results to a text file
+
+text_file = os.path.join('/Users/bwalsh/Desktop/LearnPython/python-challenge/PyPol/Vote_Analysis.text')
+
+with open(text_file, 'w',) as text_file:
+    text_file.write(f"Election Results \n")
+    text_file.write(f"-------------------- \n")
+    text_file.write(f"Total Votes: {total_votes} \n")
+    text_file.write(f"-------------------- \n")
+
+    for i in candidate_list:
+        text_file.write(i + ": " + str(format(percent_list[candidate_list.index(i)], '.2f')) 
+            + "% (" + str(vote_list[candidate_list.index(i)]) + ") \n" )
+
+
+    text_file.write(f"-------------------- \n")
+    text_file.write(f"Winner: {winner} \n")
+    text_file.write(f"-------------------- \n")
+
+
 
 
 
