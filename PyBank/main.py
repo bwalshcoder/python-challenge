@@ -68,11 +68,17 @@ with open(bankdata_csv, newline='') as csvfile:
     print(f"Greatest Profit Increase:, {biggest_profit_month}, (${highest})")
     print(f"Greatet Profit Decrease:, {biggest_loss_month}, (${lowest})")
 
+    # Write results to a text file
 
-    
+text_file = os.path.join('/Users/bwalsh/Documents/UCB-BER-DATA-PT-08-2019-U-C/homework/03-Python/Instructions/PyBank/Resources/budget_analysis.text')
 
-
-
-
+with open(text_file, 'w',) as text_file:
+    text_file.write(f"Financial Analysis \n")
+    text_file.write(f"------------------------------ \n")
+    text_file.write(f"Total Months: {total_months} \n")
+    text_file.write(f"Total Revenue: ${total_revenue} \n")
+    text_file.write(f"Average Change: ${average_change:.2f} \n")
+    text_file.write(f"Greatest Profit Increase:, {biggest_profit_month}, (${highest}) \n")
+    text_file.write(f"Greatet Profit Decrease:, {biggest_loss_month}, (${lowest}) \n")
 
 
